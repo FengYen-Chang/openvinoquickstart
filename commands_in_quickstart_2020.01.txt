@@ -162,12 +162,14 @@ Following example requires visual studio 2017/2019 installed and use command pro
 [C++ sample - Human Pose]
 "c:\Program Files (x86)\IntelSWTools\openvino\bin\setupvars.bat"
 python  "c:\Program Files (x86)\IntelSWTools\openvino\deployment_tools\tools\model_downloader\downloader.py" --list "c:\Program Files (x86)\IntelSWTools\openvino\deployment_tools\open_model_zoo\demos\human_pose_estimation_demo\models.lst" --cache_dir "C:\Users\Public\openvino_models" -o "C:\Users\Public\openvino_models"
+cd C:\Users\johnfeng\Documents\Intel\OpenVINO\omz_demos_build\intel64\Release
 human_pose_estimation_demo.exe -m "C:\Users\Public\openvino_models\intel\human-pose-estimation-0001\FP16\human-pose-estimation-0001.xml"
 
 
 [C++ sample - Interactive Face Detection]
 "c:\Program Files (x86)\IntelSWTools\openvino\bin\setupvars.bat"
 python  "c:\Program Files (x86)\IntelSWTools\openvino\deployment_tools\tools\model_downloader\downloader.py" --list "c:\Program Files (x86)\IntelSWTools\openvino\deployment_tools\open_model_zoo\demos\interactive_face_detection_demo\models.lst" --cache_dir "C:\Users\Public\openvino_models" -o "C:\Users\Public\openvino_models"
+cd C:\Users\johnfeng\Documents\Intel\OpenVINO\omz_demos_build\intel64\Release
 interactive_face_detection_demo.exe -m C:\Users\Public\openvino_models\intel\face-detection-retail-0004\FP16\face-detection-retail-0004.xml -m_ag C:\Users\Public\openvino_models\intel\age-gender-recognition-retail-0013\FP16\age-gender-recognition-retail-0013.xml -m_em C:\Users\Public\openvino_models\intel\emotions-recognition-retail-0003\FP16\emotions-recognition-retail-0003.xml -m_lm C:\Users\Public\openvino_models\intel\facial-landmarks-35-adas-0002\FP16\facial-landmarks-35-adas-0002.xml -m_hp C:\Users\Public\openvino_models\intel\head-pose-estimation-adas-0001\FP16\head-pose-estimation-adas-0001.xml -i cam
 
 
